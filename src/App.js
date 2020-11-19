@@ -9,6 +9,7 @@ const alanKey=
 
 const App=() => {
 	const [newsArticles,setNewsArticles]=useState([]);
+	const [activeArticle,setActiveArticle]=useState(0);
 	const classes=useStyles();
 
 	useEffect(() => {
@@ -17,6 +18,8 @@ const App=() => {
 			onCommand: ({command,articles}) => {
 				if(command==='newHeadLines') {
 					setNewsArticles(articles);
+				} else if(command==='highlight') {
+					setActiveArticle((prevActiveArticle) => prevActiveArticle+1);
 				}
 			}
 		});
@@ -27,7 +30,7 @@ const App=() => {
 			<div className={classes.logoContainer}>
 				<img src="https://alan.app/voice/images/previews/preview.jpg" className={classes.alanLogo} alt="logo" />
 			</div>
-			<NewsCards articles={newsArticles} />
+			<NewsCards articles={newsArticles} activeArticle={activeArticle} />
 		</div>
 	);
 };
