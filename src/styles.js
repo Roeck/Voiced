@@ -1,4 +1,4 @@
-import { makeStyles } from '@material-ui/core/styles';
+import {makeStyles} from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
   footer: {
@@ -31,7 +31,7 @@ export default makeStyles((theme) => ({
     padding: '3%',
     borderRadius: 10,
     color: 'white',
-    backgroundColor: 'rgba(21, 101, 192)',
+    backgroundColor: '#000000',
     margin: '0 12px',
     textAlign: 'center',
     height: '25vmin',
@@ -64,7 +64,7 @@ export default makeStyles((theme) => ({
       textAlign: 'center',
     },
   },
-  alanLogo: {
+  logo: {
     height: '27vmin',
     borderRadius: '15%',
     padding: '0 5%',
