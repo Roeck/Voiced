@@ -57,8 +57,7 @@ const App=() => {
 			{!newsArticles.length? (
 				<div className={classes.footer}>
 					<Typography variant="body1" component="h2">
-
-						<a className={classes.link} href="https://github.com/Roeck"> Created by Rony Boeck</a> -
+						<a className={classes.link} href="https://github.com/Roeck"> 2021 @ Roeck</a> -
 					</Typography>
 				</div>
 			):null}
