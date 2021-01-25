@@ -39,7 +39,7 @@ const Modal=({isOpen,setIsOpen,showFeedback}) => {
                 <Divider />
                 <div className={classes.infoContainer}>
                     <Typography variant="h5">News by Categories</Typography>
-                    <div className={classes.chipContainer}>{['Business','Entertainment','General','Health','Science','Sports','Technology'].map((category) => <Chip label={category} color="primary" className={classes.chip} />)}</div>
+                    <div className={classes.chipContainer}>{['Business','Entertainment','General','Science','Sports','Technology'].map((category) => <Chip label={category} color="primary" className={classes.chip} />)}</div>
                 </div>
                 <Typography variant="body1" className={classes.trySaying}>Try saying: &quot;Give me the latest <strong><em>Business</em></strong> news&quot;</Typography>
                 <Divider />
